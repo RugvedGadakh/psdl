@@ -1,0 +1,63 @@
+features of pic18:
+It uses havard architecture
+C language friendly
+it has built in power-on-reset
+low power consumption
+
+
+size of data memory - 2Mb
+
+size of program memory - 4Kb
+
+
+SFR- Special functiob Register
+
+software & compiler :  MPLABxIDE  /  XC8 compiler
+
+
+Number of ports : 5   PORTA(7bitS)  PORTB(8bitS)   PORTC(8bitS)  PORTD(8bitS)  PORTE(3bitS)
+
+
+PORTX : it reads the corresponding input pins
+LATX : reads the status of the corresponding internal port latch and not the status of the pin
+
+
+Timer : PIC18 has 2 to 5 timers depending upon PIC family
+they are  Timer0(8bits/16bits)   Timer1(16bits)  Timer3(8bits)   Timer4(16bits)  Timer5(16bits)
+
+
+bournout reset : it is a circuit that monitors the Vdd level during operations by comparing it to a fixed threshold level.
+
+watch dog timer : A watchdog timer (WDT) is a piece of hardware that can be used to automatically detect software anomalies and reset the processor if any occur. 
+
+cpp module :
+capture   1 or 3 timer
+comapare  1 or 3 timer
+PWM        2
+
+PWM: PWM is a form of signal modulation where the widths of the pulses correspond to specific data values encoded at one end and decoded at the other.
+
+
+TRIS :TRIS register is used to define the type of an I/O pin
+There are two TRIS registers, the TRISA and the TRISB that correspond to the 8 pins of each port set, the A and the B1.
+The TRIS registers are 8-bit registers.
+The TRIS A register controls the direction of the PORT pins even when they are being used as analog inputs
+
+
+ARM feature :
+von neumman architecture
+less power consumption
+ease the application porting from one device to another
+
+
+
+RISC VS CISC
+instruction size : fixed/ varies
+instruction length 4bytes/ 1 2 3 4 bytes
+registers : many general purpose / few special purpose
+hardware : simple / compilcated
+compiler : complicates / simple
+
+
+
+Prescaler divides the input pulse before the counter and the post scaler divides the output of the counter, both effectively increasing the range of the counter. Both prescaler and post scaler are used to get our desired frequency from a basic reference.
